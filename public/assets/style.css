@@ -1,0 +1,66 @@
+.sidebar {
+    background-color: #3B1E08;
+    color: #fff;
+}
+
+.text-light {
+    color: #fff;
+}
+
+.data-current\:bg-white {
+    &[data-current] {
+        color: #3B1E08 !important;
+    }
+}
+
+.bg-custom {
+    background-color: #F9DEC9 !important;
+}
+
+.bg-custom2 {
+  background-color: #3B1E08 !important;
+}
+
+.bg-custom1 {
+  background-color: #CCB69B !important;
+}
+
+
+.bg-sidebar {
+    background-color: #3B1E08 !important;
+}
+
+.custom-shadow {
+    box-shadow: 1px 2px 4px 10px #e1e1e1;
+}
+
+.model-head {
+    background-color: #F9DEC9 !important;
+    color: #1e0237;
+    border-bottom: 2px solid #3B1E08;
+    padding: 1rem;
+}
+
+.font-bold {
+    font-weight: 700 !important;
+}
+
+.text-purple {
+    color: #3B1E08 !important;
+}
+
+
+
+/* Doctors */
+
+.bg-light-doctor {
+    background-color: #ffeef2 !important;
+}
+
+.bg-sidebar-doctor {
+    background-color: #062a4c !important;
+}
+
+.bg-header-doctor {
+    background-color: #f6ccd6 !important;
+}

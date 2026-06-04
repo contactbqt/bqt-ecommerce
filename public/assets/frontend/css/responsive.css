@@ -1,0 +1,205 @@
+html, body { overflow-x: hidden; }
+img, video { max-width: 100%; height: auto; }
+
+@media (max-width: 991px) {
+  .navbar { position: sticky; top: 0; z-index: 1100; padding: 10px 12px; }
+  .navbar .justify-content-center { display: none; }
+  .mobile-toggler { display: inline-flex; align-items: center; justify-content: center; border: none; background: transparent; padding: 6px; }
+  .mobile-toggler .navbar-toggler-icon { display: inline-block; width: 24px; height: 24px; background-size: 24px 24px; background-repeat: no-repeat; background-position: center; background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  .navbar-brand img { width: 160px; height: auto; }
+}
+
+.mobile-menu { position: fixed; top: 0; right: -280px; width: 280px; height: 100%; background: #fff; color: #333; padding: 16px; transition: right .3s ease-in-out; z-index: 1200; box-shadow: 0 4px 12px rgba(0,0,0,.15); }
+.mobile-menu.active { right: 0; }
+.mobile-menu .mobile-close { font-size: 28px; cursor: pointer; display: block; text-align: right; }
+.mobile-menu ul { list-style: none; margin: 0; padding: 0; }
+.mobile-menu ul li { margin: 10px 0; }
+.mobile-menu ul li a { color: #333; text-decoration: none; font-size: 16px; display: block; padding: 10px 8px; border-radius: 8px; }
+.mobile-menu ul li a.mobile-login-highlight { background: #3B1E08; color: #fff; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,.15); }
+.mobile-menu ul li a.mobile-login-highlight:hover { background: #4a260c; }
+.mobile-menu ul li a:hover { background: #f5f5f5; }
+.mobile-menu .has-submenu .submenu { display: none; list-style: none; margin: 6px 0 0; padding-left: 0; border: 1px solid #eee; border-radius: 6px; max-height: 240px; overflow: auto; }
+.mobile-menu .has-submenu .submenu.active { display: block; }
+
+.mobile-menu-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 1150; display: none; }
+.mobile-menu-overlay.active { display: block; }
+
+@media (max-width: 1023px) {
+  .container, .container-fluid { padding-left: 16px; padding-right: 16px; }
+  .page-header .container { padding-top: 20px; padding-bottom: 20px; }
+}
+
+@media (max-width: 678px) {
+  .hero-carousel .hero-item .hero-content .hero-title { font-size: 24px; line-height: 32px; color: #431E02 !important; }
+  .hero-carousel .hero-item .hero-content { padding: 20px; margin: 0; width: auto; text-align: center; }
+  .hero-carousel .hero-item .hero-content p { font-size: 15px; color: #331804 !important; }
+  .hero-carousel .hero-item .hero-img-overlay { background: rgba(67, 30, 2, 0.18); }
+  .hero-carousel .hero-item img { height: 320px; object-fit: cover; background-color: transparent; }
+  .hero-carousel .hero-content { transform: translateY(-20px) !important; }
+  .hero-carousel.owl-carousel .owl-dots { bottom: 6px; }
+  .specialization a { width: 48%; margin: 1%; }
+  .btn { padding: 10px 16px; font-size: 14px; }
+  .page-header h1 { font-size: 26px; line-height: 34px; }
+  .floating-buttons { bottom: 20px; right: 16px; }
+}
+
+@media (max-width: 678px) {
+  .doctor-list h3 { font-size: 28px !important; line-height: 1.2; }
+}
+
+@media (max-width: 678px) {
+  .doctor-form-col { padding: 0 !important; }
+  .appointment-card { padding: 0 !important; }
+  .appointment-card .card-body { padding-left: 12px !important; padding-right: 12px !important; padding-top: 8px; padding-bottom: 8px; }
+}
+
+@media (max-width: 678px) {
+  .about-us .row.g-5 { --bs-gutter-x: 0 !important; --bs-gutter-y: 1rem !important; }
+  .about-us .ps-5 { padding-left: 0 !important; }
+  .about-us section.p-4 { padding-left: 0 !important; padding-right: 0 !important; }
+  .about-us section.p-4 .container { padding-left: 0 !important; padding-right: 0 !important; }
+  .about-us section.p-4 .col-lg-6,
+  .about-us section.p-4 .col-md-6,
+  .about-us section.p-4 .col-sm-12,
+  .about-us section.p-4 .col-12 { padding-left: 0 !important; padding-right: 0 !important; width: 100% !important; }
+}
+
+@media (max-width: 678px) {
+  .about-testimonials { padding-left: 0 !important; padding-right: 0 !important; }
+  .about-testimonials .container { padding-left: 0 !important; padding-right: 0 !important; }
+  .about-testimonials .row { margin-left: 0 !important; margin-right: 0 !important; }
+  .about-testimonials .col-lg-5,
+  .about-testimonials .col-md-5,
+  .about-testimonials .col-lg-7,
+  .about-testimonials .col-md-7,
+  .about-testimonials .col-sm-12,
+  .about-testimonials .col-12 { width: 100% !important; max-width: 100% !important; padding-left: 0 !important; padding-right: 0 !important; }
+  .about-testimonials-section { padding-left: 0 !important; padding-right: 0 !important; }
+}
+
+@media (max-width: 678px) {
+  .testimonial-section section.p-4 { padding-left: 0 !important; padding-right: 0 !important; }
+  .testimonial-section .container { padding-left: 0 !important; padding-right: 0 !important; }
+  .testimonial-section .row { margin-left: 0 !important; margin-right: 0 !important; }
+  .testimonial-section .col-lg-5,
+  .testimonial-section .col-md-5,
+  .testimonial-section .col-lg-7,
+  .testimonial-section .col-md-7,
+  .testimonial-section .col-sm-12,
+  .testimonial-section .col-12 { width: 100% !important; max-width: 100% !important; padding-left: 0 !important; padding-right: 0 !important; }
+}
+
+@media (max-width: 480px) {
+  .hero-carousel .hero-item img { height: 280px; object-fit: cover; background-color: transparent; }
+}
+
+@media (max-width: 992px) {
+  .page-header { background-color: #f7e5d854 !important; }
+  .page-header .breadcrumb li { color: #331804 !important; }
+  .page-header .breadcrumb-item+.breadcrumb-item::before { color: #331804 !important; }
+}
+
+/* Doctor details appointment form mobile tweaks */
+@media (max-width: 992px) {
+  .app-frm .border-end { border-right: 0 !important; border-bottom: 1px solid rgba(255,255,255,0.2); }
+  .app-frm .card .card-body { padding: 16px; }
+  .app-frm form .col-md-6, .app-frm form .col-md-12 { padding-left: 0; padding-right: 0; }
+  .app-frm #submitBtn { width: 100%; }
+}
+
+@media (max-width: 678px) {
+  .hc-box-grid { grid-template-columns: 1fr; }
+  .home-sample h2 { font-size: 34px; }
+  .home-sample h3 { font-size: 20px; }
+  .collect-sample h2 { margin: 0; }
+  .collect-sample h2 a { font-size: 20px; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; padding: 8px 12px !important; justify-content: center; }
+  .home-collection-section .d-flex { gap: 12px; align-items: center; flex-wrap: wrap; justify-content: center; width: 100%; }
+  .home-collection-section .about-btn, .home-collection-section .collect-sample { text-align: center; width: 100%; }
+  .home-collection-section .about-btn .btn { display: inline-block; }
+}
+
+@media (max-width: 992px) {
+  .home-collection-section { padding: 36px 0; }
+  .home-collection-section .hc-content { padding: 0 8px; }
+  .home-collection-section .card-body { padding: 16px; }
+  .home-collection-section .list-group { max-height: 45vh; }
+  .home-collection-section .row { flex-direction: column; }
+  .home-collection-section .col-lg-5,
+  .home-collection-section .col-lg-7 { width: 100% !important; max-width: 100% !important; }
+  /* Ensure the Benefits block stacks above the form when parent uses d-flex */
+  .home-collection-section .col-lg-12.d-flex { flex-direction: column !important; }
+  .home-collection-section .col-lg-12.d-flex > .col-lg-5,
+  .home-collection-section .col-lg-12.d-flex > .col-lg-7 { width: 100% !important; max-width: 100% !important; }
+}
+
+@media (max-width: 678px) {
+  .home-collection-section .btn { width: 100%; }
+  .home-collection-section .float-end { float: none !important; }
+}
+
+@media (max-width: 678px) {
+  .about-us-content .section-title2 h2 { font-size: 22px; text-align: left !important; }
+  .about-us-content .section-title2 h3 { font-size: 18px; }
+  .about-us-content .about-us-list { text-align: left !important; }
+  .about-us-list ul { display: block; padding-left: 0; }
+  .about-us-list ul li { font-size: 14px; line-height: 1.5; padding-left: 24px; }
+}
+
+@media (max-width: 678px) {
+  .about-us .list-unstyled { text-align: left !important; }
+  .about-us .list-unstyled li { justify-content: flex-start !important; }
+  .about-us .list-unstyled li .fs-6 { font-size: 14px !important; line-height: 1.5; }
+}
+
+@media (max-width: 992px) {
+  .list-unstyled { text-align: left !important; }
+}
+
+/* Fix bullet vertical alignment in About list */
+.about-us-list ul li { line-height: 1.6; }
+.about-us-list ul li::before { top: 50% !important; transform: translateY(-50%); }
+
+.image .img-wrapper img { width: 100%; height: auto; display: block; }
+
+@media (max-width: 678px) {
+  .opening-hours ul { padding-left: 0; }
+  .opening-hours ul li { font-size: 16px !important; line-height: 1.5; margin-bottom: 12px; display: flex; gap: 8px; align-items: baseline; }
+  .opening-hours ul li strong { font-size: 16px; }
+  .formbox .formboxmain input, .formbox .formboxmain textarea { width: 100%; }
+}
+
+@media (max-width: 678px) {
+  .faq-section .title-heading .main-heading { font-size: 20px; }
+}
+
+@media (max-width: 678px) {
+  .faq-section .accordion-item { border-radius: 12px; margin-bottom: 12px; }
+  .faq-section .accordion-button { font-size: 16px; line-height: 1.5; padding: 12px 14px; white-space: normal; word-break: keep-all; text-wrap: balance; }
+  .faq-section .accordion-button:not(.collapsed) { padding: 12px 14px; }
+  .faq-section .accordion-body { padding: 14px; font-size: 15px; line-height: 1.7; }
+}
+
+/* About page testimonials container width fix on mobile */
+@media (max-width: 678px) {
+  .about-us section.p-4 { padding-left: 0 !important; padding-right: 0 !important; }
+  .about-us section.p-4 .container { padding-left: 0 !important; padding-right: 0 !important; }
+  .about-us section.p-4 .row { margin-left: 0 !important; margin-right: 0 !important; }
+}
+
+@media (max-width: 678px) {
+  .home-collection-section .card-body .row { --bs-gutter-x: 0; }
+  .home-collection-section .form-control,
+  .home-collection-section .form-select,
+  .home-collection-section textarea { width: 100%; }
+  .home-collection-section .form-footer { align-items: center; }
+  .home-collection-section .form-footer .btn { width: auto; }
+}
+
+@media (max-width: 678px) {
+  .app-frm form.row { --bs-gutter-x: 0; }
+  .app-frm .form-control,
+  .app-frm .form-select,
+  .app-frm textarea { width: 100%; }
+  .app-frm .text-end { text-align: center !important; }
+  .app-frm #submitBtn { width: auto; }
+}
