@@ -135,8 +135,8 @@ class ProductImages extends Component
         
         if ($exists) {
             // Delete from storage
-            if (Storage::disk('public')->exists($imageName)) {
-                Storage::disk('public')->delete($imageName);
+            if (Storage::disk('public_uploads')->exists($imageName)) {
+                Storage::disk('public_uploads')->delete($imageName);
             }
             
             // Delete from DB (all rows mapped to this image for this product)
