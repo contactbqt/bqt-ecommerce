@@ -168,7 +168,7 @@ class ProductCreate extends Component
         $slug_str = Str::slug($this->slug);
 
         if ($this->image) {
-            $this->image = $this->image->store('productImages', 'public');
+            $this->image = $this->image->store('productImages', 'public_uploads');
         }
 
         if ($this->product_type === 'single' && $this->family_id === 'new' && $this->new_family_name) {

@@ -91,16 +91,16 @@ class CategoryIndex extends Component
             if ($this->editMode) {
                 $data['image'] = $this->image;
                 //delete old image
-                if ($this->category->image && Storage::disk('public')->exists($this->category->image)) {
-                    Storage::disk('public')->delete($this->category->image);
+                if ($this->category->image && Storage::disk('public_uploads')->exists($this->category->image)) {
+                    Storage::disk('public_uploads')->delete($this->category->image);
                 }
 
             }
-            $imagePath = $this->image->store('categories', 'public');
+            $imagePath = $this->image->store('categories', 'public_uploads');
             $data['image'] = $imagePath;
         } elseif ($this->remove_image && $this->editMode) {
-            if ($this->category->image && Storage::disk('public')->exists($this->category->image)) {
-                Storage::disk('public')->delete($this->category->image);
+            if ($this->category->image && Storage::disk('public_uploads')->exists($this->category->image)) {
+                Storage::disk('public_uploads')->delete($this->category->image);
             }
             $data['image'] = null;
         }

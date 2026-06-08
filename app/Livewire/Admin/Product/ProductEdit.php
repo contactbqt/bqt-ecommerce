@@ -248,7 +248,7 @@ class ProductEdit extends Component
                     unlink($oldImagePath);
                 }
             }
-            $productData->image = $this->image->store('productImages', 'public');
+            $productData->image = $this->image->store('productImages', 'public_uploads');
             $this->existing_image = $productData->image;
             $this->image = null; // Clear temp image
         } else {

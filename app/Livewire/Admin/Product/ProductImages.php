@@ -98,7 +98,7 @@ class ProductImages extends Component
         }
 
         foreach ($this->photos as $photo) {
-            $path = $photo->store('productImages', 'public');
+            $path = $photo->store('productImages', 'public_uploads');
             
             if ($this->product_type === 'variant') {
                 foreach ($this->selectedVariants as $variantId) {

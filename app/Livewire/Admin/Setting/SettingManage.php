@@ -49,20 +49,20 @@ class SettingManage extends Component
             // Handle Site Logo
             if ($key === 'SITE_LOGO' && $this->site_logo) {
                 $this->validate(['site_logo' => 'image|max:2048']);
-                if ($setting->value && Storage::disk('public')->exists($setting->value)) {
-                    Storage::disk('public')->delete($setting->value);
+                if ($setting->value && Storage::disk('public_uploads')->exists($setting->value)) {
+                    Storage::disk('public_uploads')->delete($setting->value);
                 }
-                $value = $this->site_logo->store('settings', 'public');
+                $value = $this->site_logo->store('settings', 'public_uploads');
                 $this->site_logo = null;
             }
 
             // Handle Favicon
             if ($key === 'FAVICON' && $this->favicon) {
                 $this->validate(['favicon' => 'image|mimes:ico,png,jpg|dimensions:width=32,height=32|max:512']);
-                if ($setting->value && Storage::disk('public')->exists($setting->value)) {
-                    Storage::disk('public')->delete($setting->value);
+                if ($setting->value && Storage::disk('public_uploads')->exists($setting->value)) {
+                    Storage::disk('public_uploads')->delete($setting->value);
                 }
-                $value = $this->favicon->store('settings', 'public');
+                $value = $this->favicon->store('settings', 'public_uploads');
                 $this->favicon = null;
             }
 
